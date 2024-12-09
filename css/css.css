@@ -82,11 +82,49 @@ footer h2 {
 }
 
 .forsidekasser {
-    background-color: var(--Lilla);
     height: 100%;
     display: flex;
     justify-content: space-evenly;
     padding: 5%;
     padding-bottom: 10%;
     padding-top: 5%;
+}
+
+.linkkasse a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--Sort);
+}
+
+.kasse {
+    width: 250px;
+    height: 250px;
+    background-color: var(--Lilla);
+    text-align: center;
+    align-content: center;
+    color: var(--Sort);
+}
+
+.some {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--Lilla);
+    margin-right: -20%;
+}
+
+.Insta {
+    max-width: 16%;
+    margin-left: 45%;
+}
+
+.spotify {
+    width: 18%;
+    margin-left: 5%;
+}
+
+#ikon4 {
+    background-color: white;
+    border-radius: 50%;
+    color: #215799;
+
 }
