@@ -2,9 +2,14 @@
 #omradarindledning {
     margin-top: 1%;
     text-align: center;
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 2%;
+    margin-left: 2%;
     color: var(--Sort);
+    font-size: larger;
+}
+
+#omradarindledning p {
+    text-align: left;
 }
 
 .streg {
@@ -16,24 +21,71 @@
 
 h2 {
     font-weight: bold;
-    white-space: nowrap;
     margin-bottom: 1%;
 }
 
 .omradar {
     display: flex;
-    justify-content: space-evenly;
-    gap: 8.8%;
-    margin-right: 4%;
+    flex-direction: column;
+    margin-right: 2%;
+    margin-left: 2%;
     margin-bottom: 2%;
+    margin-top: 5%;
+    max-width: 96%;
+    font-size: larger;
 }
 
 .omradarcontainer {
-    max-width: 25%;
     color: var(--Sort);
+    margin-bottom: 5%;
 }
 
-figure {
-    display: flex;
-    justify-content: center;
+.figur {
+    margin-left: -15.7%;
+    max-width: 130%;
+}
+
+/* Responsiv styling */
+@media (min-width: 992px) {
+    #omradarindledning {
+        margin-top: 1%;
+        text-align: left;
+        margin-right: 20%;
+        margin-left: 20.7%;
+        color: var(--Sort);
+        font-size: 100%;
+    }
+    #omradarindledning p {
+        text-align: left;
+    }
+    h2 {
+        font-weight: bold;
+        white-space: nowrap;
+        margin-bottom: 1%;
+    }
+    .omradar {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        gap: 8.8%;
+        margin-right: 4%;
+        margin-left: 0;
+        margin-bottom: -1%;
+        margin-top: 0;
+        max-width: 100%;
+        font-size: 100%;
+    }
+    .omradarcontainer {
+        max-width: 25%;
+        color: var(--Sort);
+    }
+    .figur {
+        margin-left: 0;
+        max-width: 100%;
+    }
+    figure {
+        display: flex;
+        justify-content: center;
+        margin-top: -5%;
+    }
 }
