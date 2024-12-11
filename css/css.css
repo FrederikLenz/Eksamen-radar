@@ -21,38 +21,55 @@ header {
     position: sticky;
     top: 0;
     background-color: var(--Fersken);
+    padding: 0 2%;
 }
 
 #headerbillede {
-    max-width: 45%;
+    max-width: 20%;
     height: auto;
-    margin-top: 2%;
-    margin-left: -43%;
+    margin-right: auto;
+    margin-top: 0.8%;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    align-items: center; 
+    justify-content: center; 
+    flex-grow: 1;
 }
 
-.navbar .a {
+.menupunkter {
+    display: none;
+    flex-direction: column; 
+}
+
+.menupunkter a {
     font-size: 200%;
-    padding-right: 10%;
-    margin-left: -10%;
     color: var(--Sort);
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
     font-weight: bold;
+
 }
 
-.navbar :not(#headerbillede){
-    margin-right: 2%;
-}
-
-.navbar a:hover {
+.menupunkter a:hover {
     color: var(--Sand);
+}
+
+.burger-icon i {
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle:checked ~ .menupunkter {
+    display: block;
+    background-color: var(--Fersken);
 }
 
 body {
@@ -78,7 +95,7 @@ footer h2 {
 .footertekst-højre
 .footertekst-venstre {
     white-space: nowrap;
-   width: 100%;
+    width: 100%;
 }
 
 /* Forside styling */
@@ -133,3 +150,26 @@ footer h2 {
     border-radius: 50%;
     color: #215799;
 }
+
+/* Responsiv styling */
+@media (min-width: 768px) {
+    .burger-icon {
+      display: none;
+    }
+
+    .menupunkter {
+      display: flex;
+      flex-direction: row;
+      background-color: transparent;
+      border: none;
+      gap: 20%;
+      margin-top: -6%;
+    }
+
+    #headerbillede{
+        max-width: 5%;
+        height: auto;
+        margin: 0;
+        margin-top: 0.3%;
+    }
+  }
