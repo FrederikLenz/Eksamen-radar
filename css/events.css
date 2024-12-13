@@ -129,11 +129,19 @@ h4 {
     .foreslå {
         margin-left: 2%;
         background-color: var(--Fersken);
-        max-width: 20%;
+        max-width: 30%;
         margin-top: 0;
         margin-bottom: 2%;
         color: var(--Sort);
     }
+    .knapogtekst {
+        display: flex;
+    }
+
+    .knap {
+        margin-left: 45%;
+    }
+
     .content {
         max-width: 80%;
         margin-top: 2%;

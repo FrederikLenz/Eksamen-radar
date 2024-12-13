@@ -59,23 +59,22 @@ h2 {
     }
     h2 {
         font-weight: bold;
-        white-space: nowrap;
         margin-bottom: 1%;
     }
     .omradar {
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
-        gap: 8.8%;
-        margin-right: 4%;
-        margin-left: 0;
+        gap: 5.8%;
+        margin-right: 2%;
+        margin-left: 2%;
         margin-bottom: -1%;
         margin-top: 0;
         max-width: 100%;
         font-size: 100%;
     }
     .omradarcontainer {
-        max-width: 25%;
+        max-width: 30%;
         color: var(--Sort);
     }
     .figur {
