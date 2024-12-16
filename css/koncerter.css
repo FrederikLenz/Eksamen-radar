@@ -36,6 +36,7 @@ h2 {
     max-width: 100%;
     background-color: var(--Fersken);
     color: var(--Sort);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .koncertcontainer:hover {

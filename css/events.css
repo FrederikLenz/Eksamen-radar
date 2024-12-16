@@ -33,6 +33,7 @@
     max-width: 100%;
     background-color: var(--Fersken);
     color: var(--Sort);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .eventcontainer img {
@@ -139,7 +140,6 @@ h4 {
         justify-content: space-between;
         max-width: 100%;
     }
-
     .content {
         max-width: 80%;
         margin-top: 2%;
